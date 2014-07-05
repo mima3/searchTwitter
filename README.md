@@ -17,18 +17,18 @@ Python2.7
 
 使い方
 ------
-1. 下記のURLにアクセスしてAPIキーを取得して、その値をtwitter.iniに記述します。  
+(1) 下記のURLにアクセスしてAPIキーを取得して、その値をtwitter.iniに記述します。  
 https://apps.twitter.com/
 
 twitter.ini.originalをtwitter.iniに変更してAPIを入力してください。
 
 
-2. 記録用のDBを作成します。  
+(2) 記録用のDBを作成します。  
 
     python create_db.py test.sqlite
 
 
-3. 検索を行い、その結果をDBに記録する
+(3) 検索を行い、その結果をDBに記録する
 
     python search_twitter.py test.sqlite "needtec" 0
 
