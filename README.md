@@ -34,6 +34,13 @@ https://apps.twitter.com/
 第二引数：検索文字  
 第三引数：since_id・・・このIDより大きいツイートを検索する  
 
+現状のスクリプトではWindows(日本語)でしか動作しない。  
+search_twitter.pyの35行目をコメントアウトすることでWindows以外でも動作する。
+
+```
+    # もし、UTF-8のターミナルなら以下の行はコメントアウトする
+    term = unicode(term, 'cp932').encode('utf-8')
+```
 
 
 テーブルの説明
