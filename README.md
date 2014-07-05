@@ -31,7 +31,7 @@ https://apps.twitter.com/
     python search_twitter.py test.sqlite "needtec" 0
 
 第一引数：データベースへのパス  
-第二引数：検索文字
+第二引数：検索文字  
 第三引数：since_id・・・このIDより大きいツイートを検索する  
 
 
