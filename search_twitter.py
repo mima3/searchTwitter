@@ -65,7 +65,6 @@ def main(argvs, argc):
     ret = tw.StartSearch(term, tw_since_id, tw_max_id)
     found = 0
     for t in tw.GetTweets():
-        print t['text']
         utc = dateutil.parser.parse(t['createdtime']).utctimetuple()
         tmstamp = time.mktime(utc)
         db.AppendTweet(cond_id, t['id'], t['text'], t['user_id'], tmstamp)
